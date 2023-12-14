@@ -1,12 +1,53 @@
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./assets/css/style.css">
-        <title>zeichentrenner-js</title>
-    </head>
-    <body>
-    <script src="./assets/js/main.js"></script>
-    </body>
-    </html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Mukta"
+    />
+    <title>zeichentrenner-js</title>
+  </head>
+  <body>
+    <div id="gradient">
+      <section>
+        <form action="" onsubmit="truncateThis(); return false">
+          <h1>Zeichenkettentrennungsmaschine</h1>
+          <label for="inputOne">Zu trennende Zeichenkette </label>
+          <input type="text" name="inputOne" id="inputOne" />
+          <label for="inputTwo">Trennen bei Zeichenkette </label>
+          <input type="text" name="inputTwo" id="inputTwo" />
+          <div>
+            <input type="radio" name="radioOne" id="radioOne" />
+            <label for="radioOne">davor trennen</label>
+            <input type="radio" name="radioTwo" id="radioTwo" />
+            <label for="radioTwo">danach trennen</label>
+            <input type="submit" value="Absenden" />
+          </div>
+          <h2>Ausgabe</h2>
+          <h3>Vorderer Teil</h3>
+          <span class="outputOne"></span>
+          <h3>Hinterer Teil</h3>
+          <span class="outputTwo"></span>
+        </form>
+      </section>
+      <script src="./assets/js/main.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/vanta@0.5.24/dist/vanta.halo.min.js"></script>
+      <script>
+        VANTA.HALO({
+          el: "#gradient",
+          mouseControls: false,
+          touchControls: false,
+          gyroControls: false,
+          minHeight: 200.0,
+          minWidth: 200.0,
+          amplitudeFactor: 3.0,
+          size: 2.0,
+        });
+      </script>
+    </div>
+  </body>
+</html>

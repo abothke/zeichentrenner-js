@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Mukta";
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+section form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  background-color: rgba(40, 67, 135, 0.8);
+  color: white;
+  border-radius: 25px;
+  height: 700px;
+  width: 500px;
+}
+
+div:nth-of-type(2) {
+  text-align: center;
+  display: flex;
+  gap: 20px;
+}
+
+body {
+  background-color: #000000;
+  padding: 0px;
+  margin: 0px;
+}
+
+#gradient {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+input {
+  margin: 25px;
+}
