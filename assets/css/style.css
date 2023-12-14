@@ -4,7 +4,9 @@
   box-sizing: border-box;
   font-family: "Mukta";
 }
-
+h3 {
+  text-decoration: underline;
+}
 body {
   height: 100vh;
   display: flex;
@@ -21,8 +23,12 @@ section form {
   background-color: rgba(40, 67, 135, 0.8);
   color: white;
   border-radius: 25px;
-  height: 700px;
+  height: 775px;
   width: 500px;
+}
+
+section form h1 {
+  margin-top: 20px;
 }
 
 div:nth-of-type(2) {
